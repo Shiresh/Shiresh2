@@ -3,7 +3,7 @@ var APP = APP || {};
 (function () {
 	// Data objecten
 	APP.game = {
-		title:'Pagina 1',
+		title:'GAME',
 		game:[
 		{ score: "1", team1: "Boomsquad", team1Score: "1", team2: "Burning Snow", team2Score: "0"},
 		{ score: "2", team1: "Boomsquad", team1Score: "2", team2: "Burning Snow", team2Score: "0"},
@@ -32,7 +32,7 @@ var APP = APP || {};
 	};
 
 	APP.schedule = {
-		title:'Pagina 2',	
+		title:'SCHEDULE',	
 		schedule:[
 		{ date: "Monday, 9:00am", team1: "Chasing", team1Score: "13", team2: "Amsterdam Money Gang", team2Score: "9"},
 		{ date: "Monday, 9:00am", team1: "Boomsquad", team1Score: "15", team2: "Beast Amsterdam", team2Score: "11"},
@@ -48,7 +48,7 @@ var APP = APP || {};
 	};
 
 	APP.ranking = {
-		title:'Pagina 3',
+		title:'RANKING',
 		ranking:[
 		{ team: "Chasing", Win: "2", Lost: "2", Sw: "7", Sl: "9", Pw: "35", Pl: "39"},
 		{ team: "Boomsquad", Win: "2", Lost: "2", Sw: "9", Sl: "8", Pw: "36", Pl: "34"},
@@ -71,13 +71,12 @@ var APP = APP || {};
 		init: function () {
 	  		routie({
 				//property /schedule
+				'/game': function() {
+			    	APP.page.game();
+			    },
 			    '/schedule': function() {
 			    	APP.page.schedule();
 				},
-			    '/game': function() {
-			    	APP.page.game();
-			    },
-
 			    '/ranking': function() {
 			    	APP.page.ranking();
 			    },

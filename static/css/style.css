@@ -57,7 +57,7 @@ ul {
 			background-color: #eee;
 		}
 
-section img, video {
+section , video {
 	max-width: 100%;
 	border:10px solid #eee;
 	box-shadow:0 0 5px #aaa;
@@ -79,30 +79,36 @@ figcaption {
 /* header section */
 header {
 	position:relative;
-	padding:0 .5em;
+	padding:0 0.5em 0.5em;
 	background-color: #132d6e;
 }
 	header img {
-		opacity:.3;
 		width:50px;
+		margin-top: 8px;
 		position:absolute;
-		top:-.8em;
 		-webkit-transition:all 1s ease;
 	}
 	header img:hover {
 		opacity:1;
 	}
 	header h1 {
-		font-family: "Marker Felt";
-		color:#000;
+		font-family: "Garamond";
+		color:#FFF;
 		font-size: 1.6em;
-		margin-left:2.5em;
+		margin-left:3.5em;
+		padding-top: 15px;
 
 	}
+/*table*/
+table th {
+	background-color: gray;
+	width: 100px;
+}
 
 /* Content section */
 article#content {
 	clear:left;
+	
 }
 	article > section {
 		display:none;
@@ -118,6 +124,12 @@ article#content {
 		list-style: none;
 		margin-bottom:3em;
 	}
+/*SECTION H1*/
+section h1{
+	margin-left: 5px;
+}
+
+	
 /* Aside */
 aside {
 	text-align: center;
